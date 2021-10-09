@@ -1,17 +1,21 @@
 <%- include('../partials/header') %>
 <body>
+  <div id="main">
     <h1>Skills</h1>
     <ul>
       <% skills.forEach(function(t) { %>
         <li>
+          <form action="/skills/<%= t.id %>?_method=DELETE"
+            class="delete-form" method="POST">
+            <button type="submit">X</button>
+          </form>
           <a href="/skills/<%= t.id%>">
           <%= t.skill %>
-            - 
-          <%= t.learned ? 'true' : 'false' %>
         </a>
         </li>
       <% }); %>
     </ul>
+  </div>
   </body> 
 <%- include('../partials/footer') %>
  

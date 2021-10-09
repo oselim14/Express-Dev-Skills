@@ -1,8 +1,55 @@
+*{
+  box-sizing: border-box;
+}
 body {
+  display: grid;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(217, 234, 244);
 }
 
-a {
-  color: #00B7FF;
+
+#main > ul {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  line-height: 30px;
+}
+
+#main > h1 {
+  justify-content: center;
+}
+
+a{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: black;
+  align-content: center;
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 3px 3px lightgray;
+
+}
+	
+li {
+  list-style: none;
+}
+
+.edit {
+  background-color: white;
+  box-shadow: 3px 3px lightgray;
+  text-decoration: none;
 }
